@@ -15,13 +15,13 @@ int main()
 {
 	int argc = 5;
 	char* argv[5];
-	argv[1] = "1.png";
-	argv[2] = "2.png";
-	argv[3] = "3.png";
-	argv[4] = "4.png";
-	argv[5] = "5.png";
+	argv[0] = "1.png";
+	argv[1] = "2.png";
+	argv[2] = "3.png";
+	argv[3] = "4.png";
+	argv[4] = "5.png";
 
-	for (int i = 1; i < argc; ++i)
+	for (int i = 0; i < argc; ++i)
     {
         Mat img = imread(argv[i]);
         if (img.empty())
